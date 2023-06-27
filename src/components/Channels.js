@@ -1,4 +1,10 @@
+import CryptoNews from "../CryptoNews";
+import {useEffect, useState } from "react";
 const Channels = ({ provider, account, dappcord, channels, currentChannel, setCurrentChannel }) => {
+  const [IsNews, setIsNews] = useState(false);
+  const NewsHandler = () => {
+
+  }
   const channelHandler = async (channel) => {
     // Check if user has joined
     // If they haven't allow them to mint.
@@ -17,7 +23,7 @@ const Channels = ({ provider, account, dappcord, channels, currentChannel, setCu
   return (
     <div className="channels">
       <div className="channels__text">
-        <h2>Text Channels</h2>
+        <h2>General ChatRoom</h2>
 
         <ul>
           {channels.map((channel, index) => (
@@ -31,14 +37,13 @@ const Channels = ({ provider, account, dappcord, channels, currentChannel, setCu
       </div>
 
       <div className="channels__voice">
-        <h2>Voice Channels</h2>
-
-        <ul>
-          <li>Channel 1</li>
-          <li>Channel 2</li>
-          <li>Channel 3</li>
-        </ul>
+        <h2 style={{"color": "white", "cursor": "pointer"}} onClick={() => {setIsNews(!IsNews)}}>Coin Ranking</h2>
       </div>
+      {
+        IsNews && (
+          <CryptoNews IsNews={IsNews} setIsNews={setIsNews} />
+        )
+      }
     </div>
   );
 }

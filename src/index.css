@@ -8,10 +8,10 @@
 
 :root {
   --clr-white: #FFFFFF;
-  --clr-black: #202020;
-  --clr-grey: #303136;
-  --clr-light-grey: #363940;
-  --clr-dark-grey: #212226;
+  --clr-black: #031f53;
+  --clr-grey: #091449;
+  --clr-light-grey: #405fa7;
+  --clr-dark-grey: #081a61;
   --clr-blue: #5865F2;
   --clr-green: #34AB55;
 
@@ -340,4 +340,33 @@ main {
   .text {
     grid-column: 7/13;
   }
+}
+.flex{
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.Popup {
+  padding: 20px;
+  position: fixed;
+  top: 10%;
+  right: 10%;
+ 
+  width: 80%;
+  height: 80%;
+  background-color: white;
+}
+.rankingBox{
+  display: flex;
+  flex-wrap: wrap;
+}
+.cryptoImg{
+  width: 100px;
+}
+.rank{
+  width: 20%;
+  padding: 20px;
+}
+.submitcolor{
+  color: white;
 }

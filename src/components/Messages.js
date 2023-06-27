@@ -45,7 +45,7 @@ const Messages = ({ account, messages, currentChannel }) => {
 
         {currentChannel && messages.filter(message => message.channel === currentChannel.id.toString()).map((message, index) => (
           <div className="message" key={index}>
-            <img src={person} alt="Person" />
+            <img src={person} alt="Person" style={{"backgroundColor": "white"}}/>
             <div className="message_content">
               <h3>{message.account.slice(0, 6) + '...' + message.account.slice(38, 42)}</h3>
               <p>
@@ -67,7 +67,7 @@ const Messages = ({ account, messages, currentChannel }) => {
         )}
 
         <button type="submit">
-          <img src={send} alt="Send Message" />
+          <img src={send} style={{"color": "white"}} alt="Send Message" className='submitcolor'/>
         </button>
       </form>
     </div>

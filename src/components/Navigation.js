@@ -1,5 +1,5 @@
 import { ethers } from 'ethers'
-
+import Logo from "../assets/logo192.png"
 const Navigation = ({ account, setAccount }) => {
   const connectHandler = async () => {
     const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' })
@@ -10,7 +10,8 @@ const Navigation = ({ account, setAccount }) => {
   return (
     <nav>
       <div className='nav__brand'>
-        <h1>Dappcord</h1>
+<img src={Logo} alt="" style={{"width": "60px", "padding": "10px"}} />
+        <h1>CryptoChat</h1>
       </div>
 
       {account ? (

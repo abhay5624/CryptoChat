@@ -7,13 +7,13 @@ const server = app.listen(PORT, () => console.log(`Listening on ${PORT}\n`))
 const messages = [
   {
     channel: "1",
-    account: "0xcA8Fa8f0b631EcdB18Cda619C4Fc9d197c8aFfCa",
-    text: "Welcome to Dappcord!"
+    account: "Admin",
+    text: "Welcome to CryptoChat!"
   },
   {
     channel: "2",
-    account: "0xcA8Fa8f0b631EcdB18Cda619C4Fc9d197c8aFfCa",
-    text: "Welcome to Dappcord everyone! My name is John and I've been a blockchain developer for 2+ years."
+    account: "Admin",
+    text: "Welcome to CryptoChat everyone! My name is Abhay and I've been a blockchain developer for 2+ years."
   },
   {
     channel: "1",
@@ -23,7 +23,7 @@ const messages = [
   {
     channel: "2",
     account: "0x1b3cB81E51011b549d78bf720b0d924ac763A7C2",
-    text: "Hey there! My name is Ann and I'm an aspiring blockchain developer!"
+    text: "Hey there! My name is Hari om and I'm an aspiring blockchain developer!"
   },
   {
     channel: "1",
